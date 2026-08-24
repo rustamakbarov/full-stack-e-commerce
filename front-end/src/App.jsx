@@ -1,4 +1,5 @@
 import "./App.css";
+import MainLayout from "./layouts/MainLayout";
 import AuthPage from "./pages/AuthPage";
 import ContactPage from "./pages/ContactPage";
 
@@ -8,10 +9,12 @@ import ShopPage from "./pages/ShopPage";
 function App() {
   return (
     <>
-      {/* <HomePage /> */}
-      {/* <ShopPage /> */}
-      {/* <ContactPage /> */}
-      <AuthPage />
+      <MainLayout>
+        {/* <HomePage /> */}
+        {/* <ShopPage /> */}
+        <ContactPage />
+        {/* <AuthPage /> */}
+      </MainLayout>
     </>
   );
 }
