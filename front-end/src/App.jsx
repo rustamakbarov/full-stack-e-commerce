@@ -10,9 +10,9 @@ function App() {
   return (
     <>
       <MainLayout>
-        {/* <HomePage /> */}
+        <HomePage />
         {/* <ShopPage /> */}
-        <ContactPage />
+        {/* <ContactPage /> */}
         {/* <AuthPage /> */}
       </MainLayout>
     </>

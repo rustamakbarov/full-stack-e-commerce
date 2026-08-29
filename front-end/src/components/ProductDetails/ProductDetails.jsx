@@ -1,6 +1,5 @@
 import Breadcrumb from "./Breadcrumb";
 import Gallery from "./Gallery";
-import PropTypes from "prop-types";
 import Info from "./Info";
 import Tabs from "./Tabs";
 
@@ -27,8 +26,3 @@ const ProductDetails = ({ singleProduct, setSingleProduct }) => {
 };
 
 export default ProductDetails;
-
-ProductDetails.propTypes = {
-  singleProduct: PropTypes.object,
-  setSingleProduct: PropTypes.func,
-};

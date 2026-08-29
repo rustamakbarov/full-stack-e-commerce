@@ -1,6 +1,5 @@
 import ReviewForm from "./ReviewForm";
 import ReviewItem from "./ReviewItem";
-import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 import { message } from "antd";
 
@@ -67,9 +66,3 @@ const Reviews = ({ active, singleProduct, setSingleProduct }) => {
 };
 
 export default Reviews;
-
-Reviews.propTypes = {
-  active: PropTypes.string,
-  singleProduct: PropTypes.object,
-  setSingleProduct: PropTypes.func,
-};

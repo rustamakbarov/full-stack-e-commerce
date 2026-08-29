@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import ProductItem from "./ProductItem";
-// import Slider from "react-slick";
-// import PropTypes from "prop-types";
+import Slider from "react-slick";
 // import { message } from "antd";
 
 function NextBtn({ onClick }) {
@@ -12,10 +11,6 @@ function NextBtn({ onClick }) {
   );
 }
 
-// NextBtn.propTypes = {
-//   onClick: PropTypes.func,
-// };
-
 function PrevBtn({ onClick }) {
   return (
     <button className="glide__arrow glide__arrow--left" onClick={onClick}>
@@ -23,10 +18,6 @@ function PrevBtn({ onClick }) {
     </button>
   );
 }
-
-// PrevBtn.propTypes = {
-//   onClick: PropTypes.func,
-// };
 
 const Products = () => {
   const [products, setProducts] = useState([]);
@@ -84,11 +75,11 @@ const Products = () => {
           <p>Summer Collection New Morden Design</p>
         </div>
         <div className="product-wrapper product-carousel">
-          {/* <Slider {...sliderSettings}> */}
-          {products.map((product) => (
-            <ProductItem productItem={product} key={product._id} />
-          ))}
-          {/* </Slider> */}
+          <Slider {...sliderSettings}>
+            {products.map((product) => (
+              <ProductItem productItem={product} key={product._id} />
+            ))}
+          </Slider>
         </div>
       </div>
     </section>

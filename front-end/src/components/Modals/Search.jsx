@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { message } from "antd";
 import { useState } from "react";
@@ -121,8 +120,3 @@ const Search = ({ isSearchShow, setIsSearchShow }) => {
 };
 
 export default Search;
-
-Search.propTypes = {
-  isSearchShow: PropTypes.bool,
-  setIsSearchShow: PropTypes.func,
-};

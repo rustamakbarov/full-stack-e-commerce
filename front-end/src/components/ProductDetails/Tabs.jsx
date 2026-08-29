@@ -1,6 +1,5 @@
 import { useState } from "react";
-import PropTypes from "prop-types";
-import Reviews from "../../Reviews";
+import Reviews from "../Reviews";
 
 const Tabs = ({ singleProduct, setSingleProduct }) => {
   const [activeTab, setActiveTab] = useState("desc");
@@ -97,8 +96,3 @@ const Tabs = ({ singleProduct, setSingleProduct }) => {
 };
 
 export default Tabs;
-
-Tabs.propTypes = {
-  singleProduct: PropTypes.object,
-  setSingleProduct: PropTypes.func,
-};

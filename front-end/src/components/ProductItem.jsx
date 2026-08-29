@@ -1,4 +1,3 @@
-// import PropTypes from "prop-types";
 // import { useContext } from "react";
 // import { CartContext } from "../../context/CartProvider";
 // import { Link } from "react-router-dom";
@@ -81,8 +80,3 @@ const ProductItem = ({ productItem }) => {
 };
 
 export default ProductItem;
-
-// ProductItem.propTypes = {
-//   productItem: PropTypes.object,
-//   setCartItems: PropTypes.func,
-// };

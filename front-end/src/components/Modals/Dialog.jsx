@@ -1,5 +1,3 @@
-import PropTypes from "prop-types";
-
 const Dialog = ({ isDialogShow, setIsDialogShow }) => {
   const handleCloseDialog = (event) => {
     const checked = event.target.checked;
@@ -44,8 +42,3 @@ const Dialog = ({ isDialogShow, setIsDialogShow }) => {
 };
 
 export default Dialog;
-
-Dialog.propTypes = {
-  isDialogShow: PropTypes.bool,
-  setIsDialogShow: PropTypes.func,
-};

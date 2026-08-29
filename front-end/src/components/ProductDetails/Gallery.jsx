@@ -1,5 +1,4 @@
 import { useState } from "react";
-import PropTypes from "prop-types";
 import Slider from "react-slick";
 import { useEffect } from "react";
 
@@ -33,14 +32,6 @@ function NextBtn({ onClick }) {
   );
 }
 
-NextBtn.propTypes = {
-  onClick: PropTypes.func,
-};
-
-PrevBtn.propTypes = {
-  onClick: PropTypes.func,
-};
-
 const Gallery = ({ singleProduct }) => {
   const [activeImg, setActiveImg] = useState({
     img: "",
@@ -63,7 +54,7 @@ const Gallery = ({ singleProduct }) => {
   return (
     <div className="product-gallery">
       <div className="single-image-wrapper">
-        <img src={`${activeImg.img}`} id="single-image" alt="" />
+        <img src={`${activeImg.img}`} id="single-image" alt="Product" />
       </div>
       <div className="product-thumb">
         <div className="glide__track" data-glide-el="track">
@@ -84,7 +75,7 @@ const Gallery = ({ singleProduct }) => {
                     src={`${itemImg}`}
                     alt=""
                     className={`img-fluid ${
-                      activeImg.imgIndex === index ? "active" : ""
+                      activeImg.imgIndex === index ? "active" : "Product"
                     } `}
                   />
                 </li>
@@ -99,7 +90,3 @@ const Gallery = ({ singleProduct }) => {
 };
 
 export default Gallery;
-
-Gallery.propTypes = {
-  singleProduct: PropTypes.object,
-};
