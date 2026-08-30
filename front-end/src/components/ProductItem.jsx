@@ -1,9 +1,9 @@
-// import { useContext } from "react";
-// import { CartContext } from "../../context/CartProvider";
+import { useContext } from "react";
+import { CartContext } from "../context/CartProvider";
 // import { Link } from "react-router-dom";
 
 const ProductItem = ({ productItem }) => {
-  //   const { cartItems, addToCart } = useContext(CartContext);
+  const { cartItems, addToCart } = useContext(CartContext);
 
   //   const filteredCart = cartItems.find(
   //     (cartItem) => cartItem._id === productItem._id,
